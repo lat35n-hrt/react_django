@@ -53,6 +53,10 @@ MIDDLEWARE = [
     'corsheaders.middleware.CorsMiddleware', 
 ]
 
+# Configuration for Django REST Framework
+REST_FRAMEWORK = {'DEFAULT_PERMISSION_CLASSES': [ 
+    'rest_framework.permission.AllowAny']}
+
 ROOT_URLCONF = 'react_django.urls'
 
 TEMPLATES = [

@@ -20,5 +20,5 @@ from app.views import *
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('', ReactView(), name="ReactView")
+    path('', ReactView.as_view(), name="ReactView")
 ]

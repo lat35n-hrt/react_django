@@ -57,6 +57,10 @@ MIDDLEWARE = [
 REST_FRAMEWORK = {'DEFAULT_PERMISSION_CLASSES': [ 
     'rest_framework.permission.AllowAny']}
 
+# Cross-Origin Resource Sharing (CORS) Configuration
+CORS_ORIGIN_ALLOW_ALL = True
+
+
 ROOT_URLCONF = 'react_django.urls'
 
 TEMPLATES = [

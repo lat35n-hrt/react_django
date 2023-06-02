@@ -10,7 +10,7 @@ class ReactView(APIView):
     serializer_class = ReactSerializer
 
     def get(self, request):
-        output = [{"employment": output.employee,
+        output = [{"employee": output.employee,
                    "department": output.department}
                    for output in React.objects.all()]
         return Response(output)
